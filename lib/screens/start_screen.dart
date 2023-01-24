@@ -41,13 +41,16 @@ class StartScreen extends StatelessWidget {
                     ),
                     alignment: Alignment.center,
                     width: MediaQuery.of(context).size.width * 0.8,
-                    child: const Text(
-                      'MEALS APP',
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 35,
-                          fontWeight: FontWeight.bold,
-                          fontFamily: 'Montserrat'),
+                    child: const FittedBox(
+                      fit: BoxFit.fitWidth,
+                      child: Text(
+                        'MEALS APP',
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 45,
+                            fontWeight: FontWeight.bold,
+                            fontFamily: 'Montserrat'),
+                      ),
                     ),
                   ),
                   Container(
@@ -58,13 +61,16 @@ class StartScreen extends StatelessWidget {
                     alignment: Alignment.center,
                     padding: const EdgeInsets.symmetric(horizontal: 2),
                     width: MediaQuery.of(context).size.width * 0.85,
-                    child: const Text(
-                      'So what are you going to cook today?',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontFamily: 'Solitreo',
-                        fontSize: 14,
-                        fontStyle: FontStyle.italic,
+                    child: const FittedBox(
+                      fit: BoxFit.fitWidth,
+                      child: Text(
+                        'So what are you going to cook today?',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontFamily: 'Solitreo',
+                          fontSize: 34,
+                          fontStyle: FontStyle.italic,
+                        ),
                       ),
                     ),
                   ),
@@ -73,12 +79,15 @@ class StartScreen extends StatelessWidget {
             ),
             const Align(
               alignment: Alignment(0, 0.65),
-              child: Text(
-                'Tap anywhere to continue!',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontFamily: 'Montserrat',
-                  fontSize: 15,
+              child: FittedBox(
+                fit: BoxFit.fitHeight,
+                child: Text(
+                  'Tap anywhere to continue!',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontFamily: 'Montserrat',
+                    fontSize: 20,
+                  ),
                 ),
               ),
             ),
